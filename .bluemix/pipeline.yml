@@ -29,6 +29,7 @@ stages:
       api_key: ${API_KEY}
     script: |-
       #!/bin/bash
+      export IKS_BETA_VERSION=1.0
       cf push "${CF_APP}"
       # View logs
       # cf logs "${CF_APP}" --recent
